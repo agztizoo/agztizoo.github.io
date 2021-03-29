@@ -1,0 +1,11 @@
+output/
+.idea/
+debug
+run
+all
+coverage.out
+.swap
+*.out
+.vscode
+.DS_Store
+__debug_bin
