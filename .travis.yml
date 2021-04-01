@@ -1,0 +1,16 @@
+sudo: false
+language: node_js
+node_js:
+  - 10 # use nodejs v10 LTS
+cache: npm
+branches: master # 只监听哪个分支执行流水线，这里我们选择源码所在的 master 分支
+script:
+  - hexo generate # 生成
+deploy:
+  provider: pages # 使用 GitHub Pages 对应的部署方式，更多细节请戳 https://docs.travis-ci.com/user/deployment/pages/
+  skip-cleanup: true # 一定要是 true，否则生成的产物会被清理掉，然后就部署了个寂寞
+  github-token: $ReleaseToken
+  on:
+    branch: master # 只监听 master 分支执行部署
+  target_branch: release # 部署到仓库的哪个分支里，我们这里是 release 分支
+  local-dir: public # 生成产物在哪个路径，我们这里是 public 路径
