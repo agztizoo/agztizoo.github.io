@@ -103,3 +103,10 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+algolia:
+ applicationID: JXIHBUMHC0
+ indexName: agztizoo.github.io
+ apiKey: 851ba1b5ced28eed45cf6dc88f24eb9d
+ chunkSize: 5000
+ 
