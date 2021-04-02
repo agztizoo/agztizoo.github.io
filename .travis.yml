@@ -6,6 +6,7 @@ cache: npm
 branches: master # 只监听哪个分支执行流水线，这里我们选择源码所在的 master 分支
 script:
   - hexo generate # 生成
+  - hexo algolia # 将站点内容索引至 Algolia
 deploy:
   provider: pages # 使用 GitHub Pages 对应的部署方式，更多细节请戳 https://docs.travis-ci.com/user/deployment/pages/
   skip-cleanup: true # 一定要是 true，否则生成的产物会被清理掉，然后就部署了个寂寞
