@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: agztizoo
 subtitle: ''
 description: ''
 keywords:
@@ -109,4 +109,3 @@ algolia:
  indexName: agztizoo.github.io
  apiKey: 851ba1b5ced28eed45cf6dc88f24eb9d
  chunkSize: 5000
- 
